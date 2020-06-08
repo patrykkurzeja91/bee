@@ -1,72 +1,61 @@
 <template>
   <div class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        bee-family
+    <bee />
+    <div class="quote-wrapper">
+      <h1 class="quote">
+        Wyjechałabym do Egiptu, kupiła wielbłąda i porywała ludzi dla pieniędzy
       </h1>
-      <h2 class="subtitle">
-        simple animated page
+      <h2 class="author">
+        Pszczółka
       </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
     </div>
   </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
+import Bee from '~/components/Bee'
 
 export default {
   components: {
-    Logo
+    Bee
   }
 }
 </script>
 
 <style>
+.page {
+
+}
 .container {
   margin: 0 auto;
-  min-height: 100vh;
+  padding: 2rem 3rem;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  min-height: 100vh;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.wrapper {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
 }
 
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
+.quote-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color:antiquewhite;
+  flex-grow: 1;
+  margin-top: 4rem;
 }
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
+.quote {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
 }
-
-.links {
-  padding-top: 15px;
+.author {
+  margin-top: 2.5rem;
 }
 </style>
