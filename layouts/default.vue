@@ -3,7 +3,21 @@
     <nuxt />
   </div>
 </template>
-
+<script>
+import BeeImage from '~/assets/honey-bee-clip-art-drawing-buzzing-bees-bee.jpg'
+export default {
+  head () {
+    return {
+      meta: [
+        { hid: 'og:title', name: 'og:title', content: 'Awesome Bee Quotes' },
+        { hid: 'og:description', name: 'og:description', content: 'Just a random quotes about life. Polish only!' },
+        { hid: 'og:image', name: 'og:image', content: BeeImage },
+        { hid: 'og:url', name: 'og:url', content: 'https://bee-quote.netlify.app/' }
+      ]
+    }
+  }
+}
+</script>
 <style lang="scss">
 html {
   font-family: 'Amatic SC', 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', cursive;
