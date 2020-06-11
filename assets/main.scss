@@ -7,6 +7,12 @@ $black: #363636;
 $greyD: #F0F0F0;
 $whiteD: #F8F8FF;
 $whiteL: #FFF;
+$whiteW: antiquewhite;
 $bluebee: #7ec0ee;
 $bluebeeD: desaturate(darken($bluebee, 10%), 20%);
 
+//breakpoints
+$screen-xs: 640px;
+$screen-sm: 768px;
+$screen-md: 992px;
+$screen-lg: 1200px;

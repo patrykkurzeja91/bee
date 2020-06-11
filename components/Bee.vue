@@ -234,7 +234,12 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  transform: scale(.65);
+  transform: scale(.35);
+  height: 150px;
+  @media (min-width: $screen-xs) {
+    transform: scale(.65);
+    height: 300px;
+  }
 }
 
 .shadow {

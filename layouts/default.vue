@@ -17,6 +17,7 @@ html {
 }
 
 body {
+  position: relative;
   background: $bluebee;
   background: linear-gradient(45deg, $bluebeeD, $bluebee);
   cursor: default;
